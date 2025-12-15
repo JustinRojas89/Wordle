@@ -4,6 +4,8 @@ An optimized implementation of the Wordle game by the New York Times, but for yo
 - Colorful text labels and output for a more immersive experience
 - Play as many times as you want without a daily limit.
 
+---
+
 ## Set Up
 
 ### Prerequisites
@@ -54,12 +56,6 @@ The game primarily accepts English guesses of a particular length, but also supp
 | `QUIT` or any variation of it | Immediately ends the game. |
 
 ---
-
-## Author
-
-* Justin Rojas
-* [github link]
-* [website link]
 
 ## License
 
