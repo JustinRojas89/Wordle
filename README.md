@@ -13,10 +13,11 @@ An optimized implementation of the Wordle game by the New York Times, but for yo
 
 You need to have a recent version of the Java Development Kit (JDK) installed on your system. This project was developed and tested using **Java 17+**.
 
-### Compilation
+### Compilation & Execution
 
-1. Ensure `Constants.java` is in a package (named `wordle`) that is in the same directory as `Wordle.java`.
-2. Open your terminal in the project directory and compile it:
+1. Ensure `Constants.java` is in a package named `wordle` that is in the same directory as `Wordle.java`.
+2. Ensure `all_words.txt` is in a folder named `data` that is in the same directory as `Wordle.java`.
+3. Open your terminal in the project directory and compile it:
 
 ```bash
 javac Wordle.java
