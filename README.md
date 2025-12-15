@@ -1,8 +1,8 @@
 # Wordle
 An optimized implementation of the Wordle game by the New York Times, but for your terminal.
+- Play as many times as you want without a daily limit.
 - Support for custom game parameters (guessing words of a certain length, requiring a certain number of guesses, and choosing custom words for friends)
 - Colorful text labels and output for a more immersive experience
-- Play as many times as you want without a daily limit.
 
 ---
 
