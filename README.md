@@ -10,7 +10,7 @@ An optimized implementation of the Wordle game by the New York Times, but for yo
 
 ### Prerequisites
 
-You need to have the Java Development Kit (JDK) installed on your system. This project was developed and tested using **Java 17+**.
+You need to have a recent version of the Java Development Kit (JDK) installed on your system. This project was developed and tested using **Java 17+**.
 
 ### Compilation
 
@@ -30,7 +30,7 @@ This starts the game with default settings (5-letter word, 6 attempts).
 
 ## Game Customization
 
-You can enter up to three command-line arguments for a challenging (or easier) experience. All terminal arguments are completely optional, giving you total freedom.
+You can enter up to three command-line arguments for a more challenging (or easier) experience. All terminal arguments are completely optional, giving you total freedom.
 
 | Argument Position | Purpose | Example |
 | :---: | :--- | :--- |
@@ -48,7 +48,7 @@ You can enter up to three command-line arguments for a challenging (or easier) e
 
 ## In-Game Controls
 
-The game primarily accepts English guesses of a particular length, but also supports two special commands:
+The game accepts English guesses of a particular length, but also supports two special commands:
 
 | Command | Action |
 | :--- | :--- |
