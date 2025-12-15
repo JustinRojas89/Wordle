@@ -6,7 +6,7 @@ import java.util.Set;
 public final class Constants {
     private Constants() {}
 
-    public static final String WORD_FILE = "src\\all_words.txt";
+    public static final String WORD_FILE = "src\\data\\all_words.txt"; // words.txt
     public static final int DEFAULT_WORD_LENGTH = 5;
     public static final int DEFAULT_MAX_ATTEMPTS = 6;
     public static final Random RANDOM = new Random();
