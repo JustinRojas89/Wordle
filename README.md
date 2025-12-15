@@ -57,10 +57,10 @@ The game primarily accepts English guesses of a particular length, but also supp
 
 ## Author
 
-* [Justin Rojas]
+* Justin Rojas
 * [github link]
 * [website link]
 
 ## License
 
-This project is licensed under the [Choose a License, e.g., MIT License] - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
