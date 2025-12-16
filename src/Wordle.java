@@ -16,7 +16,7 @@ import java.nio.file.Path;
 import static wordle.Constants.*;
 
 public class Wordle {
-    private final String chosenPuzzle;
+    private final String chosenWord;
     private final int wordLength;
     private final int maxAttempts;
     private final Set<String> dictionarySet;
@@ -36,22 +36,22 @@ public class Wordle {
         dictionaryList = new ArrayList<>(dictionarySet);
 
         if (isChosenWordValid(chosenWord)) {
-            this.chosenPuzzle = chosenWord.toUpperCase();
+            this.chosenWord = chosenWord.toUpperCase();
 
-            dictionarySet.add(this.chosenPuzzle);
+            dictionarySet.add(this.chosenWord);
 
-            // if (dictionarySet.add(this.chosenPuzzle)) {
-            //     dictionaryList.addLast(this.chosenPuzzle); // remove for max performance? (due to ArrayList resizing) and since it isn't used after this point
+            // if (dictionarySet.add(this.chosenWord)) {
+            //     dictionaryList.addLast(this.chosenWord); // remove for max performance? (due to ArrayList resizing) and since it isn't used after this point
             // }
         } else {
-            this.chosenPuzzle = getRandomWord();
+            this.chosenWord = getRandomWord();
         }
 
-        availableHints = initializeHints(this.chosenPuzzle);
+        availableHints = initializeHints(this.chosenWord);
         alreadyGuessed = HashSet.newHashSet(this.maxAttempts);
         puzzleCharCounts = new int[26];
 
-        for (char letter : chosenPuzzle.toCharArray()) {
+        for (char letter : this.chosenWord.toCharArray()) {
             puzzleCharCounts[letter - 'A']++;
         }
 
@@ -259,7 +259,7 @@ public class Wordle {
             char c = guess.charAt(i);
             int index = c - 'A';
 
-            if (c == chosenPuzzle.charAt(i)) {
+            if (c == chosenWord.charAt(i)) {
                 colorResult[i] = GREEN_BACKGROUND;
                 localCounts[index]--; 
                 
@@ -313,7 +313,7 @@ public class Wordle {
             
             System.out.printf("%n%s%n", result);
 
-            if (guess.equals(chosenPuzzle)) {
+            if (guess.equals(chosenWord)) {
                 System.out.printf("%nCongratulations! You guessed the word in %d attempts.%n%n", attempt);
                 inputScanner.close();
 
@@ -321,7 +321,7 @@ public class Wordle {
             }
         }
 
-        String displayPuzzle = chosenPuzzle.replace("", " ").trim();
+        String displayPuzzle = chosenWord.replace("", " ").trim();
 
         System.out.printf("%nBetter luck next time...%nThe word was: %s%s%s %s %s%n%n", BLACK_BACKGROUND, RED_TEXT, BOLD_TEXT, displayPuzzle, RESET_ANSI);
         inputScanner.close();
